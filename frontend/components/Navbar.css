@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+img{
+    margin-left: -100px;
+    width: 10% ;
+    object-fit: contain;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #141227;
+    color: white;
+}
+.navbar ul{
+    
+    display: flex;
+   gap: 5rem;
+   text-decoration: none;
+   list-style-type: none;
+
+}
+.navbar ul li{
+cursor: pointer;
+}
+.li{
+    font-weight:500;
+    color: aliceblue;
+    text-decoration: none;
+}
