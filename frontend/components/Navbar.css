@@ -3,7 +3,7 @@ body{
     box-sizing: border-box;
 
 }
-img{
+#logo{
     margin-left: -100px;
     width: 10% ;
     object-fit: contain;

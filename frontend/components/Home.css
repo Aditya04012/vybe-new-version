@@ -1,0 +1,97 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    height: max-content;
+    margin: 20px auto;
+    border: 1px solid rgb(219, 219, 219);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.card-header h5 {
+    margin: 0;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-content .icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.bookmark {
+    margin-left: auto;
+}
+
+.likes {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.caption {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.card-comment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.card-comment input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.comment {
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card-pic .profile-icon{
+    width: 50px;
+    height: 50px;
+}
+.card-image .post-icon{
+    width: 400px;
+    height: 400px;
+}

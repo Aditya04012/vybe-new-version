@@ -1,10 +1,12 @@
+
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0px;
     flex-direction: column;
-   
+    background-color: #141227;
+    padding-bottom: 200px;
 }
 .from-1{
     margin-top: 40px;
