@@ -7,6 +7,7 @@ import {BrowserRouter,Route,Routes} from "react-router-dom"
 import SignIn from '../components/SignIn'
 import Profile from '../components/profile'
 import Signup from '../components/Signup'
+import CreatePost from '../components/CreatePost';
 function App() {
  
 
@@ -19,6 +20,7 @@ function App() {
     <Route element={<SignIn/>} path='/signin'></Route>
     <Route element={<Signup/>} path='/signup'></Route>
     <Route element={<Profile/>} path='/profile'></Route>
+    <Route element={<CreatePost/>}  path='/createPost'></Route>
    </Routes>
 
 

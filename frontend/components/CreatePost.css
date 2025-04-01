@@ -1,0 +1,53 @@
+.Create-post{
+    width: 500px;
+    height: 50vh;
+    border: 1.5px  solid black;
+  margin: 0 auto;
+  margin-top:100px;
+}
+.Create-post .header{
+    display: flex;
+   border: 1.5px solid black;
+}
+.Create-post .header #btn{
+    height: 30px;
+    margin-top: 13px;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  margin-left:auto;
+}
+
+.Create-post .header .h3{
+    margin-left: 200px;
+}
+.prev .img-prev{
+    width: 300px;
+    height: 200px;
+
+}
+.user-header{
+    margin-top: 90px;
+    border: 1.5px solid black;
+}
+.user{
+    display: flex;
+}
+.user h4{
+    margin-top: 4px;
+    margin-left: 23px;
+}
+.user .profile-icon{
+    width: 40px;
+    height:30px;
+    border-radius: 100%;
+    
+}
+.textarea{
+    width: 99%;
+    height: 37px;
+    border: none;
+}
