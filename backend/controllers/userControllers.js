@@ -77,17 +77,19 @@ exports.protect=async(req,res,next)=>{
    
 }
 exports.createPost=(req,res,next)=>{
-      const {title,body ,photo}=req.body;
-      if(!title ||!body){
+      const {body ,url}=req.body;
+      if(!url ||!body){
         return next(new AppError("please provide all the fields"),400);
       }
 
-
       const newpost=Post.create({
-        title,
         body,
+        photo:url,
         postedBy:req.user._id
       });
-
+    res.status(201).json({
+      status:"success",
+      "message":"saved post succesfull"
+    });
 
 }

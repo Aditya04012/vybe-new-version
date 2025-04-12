@@ -1,9 +1,5 @@
 const mongoose=require('mongoose');
 const postSchema=new mongoose.Schema({
-    title:{
-        type:String,
-        require:[true,'please provide title of the post']
-    },
     body:{
         type:String,
         require:[true,'please provide body of the post']

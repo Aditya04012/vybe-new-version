@@ -37,6 +37,9 @@ const SignIn = () => {
       throw new Error(result.error || `Server error: ${data.status}`);
     }
     ResA();
+  
+    const token=result.data.token;
+    localStorage.setItem('jwt',token);
     navigate("/");  
 
   }catch(error){
