@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 import "./Signin.css"
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
 import logo from "./../Images/logo.png"
 import {  toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { LoginContext } from '../contextLogin/ContextLogin';
+
+
+
+
 const SignIn = () => {
+  const {setLogin}=useContext(LoginContext)
   const [email,setemail]=useState("");
   const [password,setpassword]=useState("");
   const navigate=useNavigate();
@@ -40,6 +47,7 @@ const SignIn = () => {
   
     const token=result.data.token;
     localStorage.setItem('jwt',token);
+    setLogin(true);
     navigate("/");  
 
   }catch(error){

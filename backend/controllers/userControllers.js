@@ -93,3 +93,15 @@ exports.createPost=(req,res,next)=>{
     });
 
 }
+
+exports.getALlPost=async(req,res)=>{
+    const data = await Post.find().populate({
+        path: 'postedBy',
+        select: '_id name'
+      });
+  if(!data){
+    return next(new AppError("No Post found yet"),400);
+  }
+
+  res.status(200).json(data);
+}

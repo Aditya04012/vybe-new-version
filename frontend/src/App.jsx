@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import { createContext } from 'react'
 import './App.css'
 import Home from '../components/Home'
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,13 +9,15 @@ import SignIn from '../components/SignIn'
 import Profile from '../components/profile'
 import Signup from '../components/Signup'
 import CreatePost from '../components/CreatePost';
+import { LoginContext } from '../contextLogin/ContextLogin'
 function App() {
- 
+ const [Login,setLogin]=useState(false);
 
   return (
     <BrowserRouter>
    <div className='App'>
-    <Navbar></Navbar>
+   <LoginContext.Provider value={{setLogin}}>
+    <Navbar Login={Login}></Navbar>
    <Routes>
     <Route element={<Home/>} path='/'></Route>
     <Route element={<SignIn/>} path='/signin'></Route>
@@ -25,6 +28,7 @@ function App() {
 
 
   <ToastContainer/>
+  </LoginContext.Provider>
    </div>
    </BrowserRouter>
   )
