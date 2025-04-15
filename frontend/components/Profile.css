@@ -37,7 +37,6 @@
   
   }
 .profile-gallary {
-  width: calc(40% - 10px); 
   max-width: 200px; 
   height: 100px;
   object-fit: cover; 

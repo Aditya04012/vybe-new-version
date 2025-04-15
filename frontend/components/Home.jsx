@@ -51,6 +51,7 @@ const ResB=(msg)=>{
     if (!response.ok) {
       throw new Error(result.error || `Server error: ${response.status}`);
     }
+    console.log(result);
     setPost(result);
 
   }catch(err){
@@ -105,7 +106,7 @@ const ResB=(msg)=>{
         </div>
       </div>
 
-   ))};
+   ))}
 
      
    

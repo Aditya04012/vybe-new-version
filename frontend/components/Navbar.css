@@ -31,3 +31,17 @@ cursor: pointer;
     color: aliceblue;
     text-decoration: none;
 }
+.logoutBtn{
+    color:white;
+    background-color: red;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+   width: 75px;
+   height: 3.9vh;
+   border-radius:4px;
+}
+.logoutBtn:hover{
+    background-color: rgb(218, 2, 2);
+    transition: all 0.3s ease;
+}

@@ -105,3 +105,18 @@ exports.getALlPost=async(req,res)=>{
 
   res.status(200).json(data);
 }
+exports.getPostbyId=async(req,res)=>{
+    const id=req.user._id;
+    console.log(req.user);
+    console.log(id);
+    if(!id){
+        return next(new AppError("Please login in"),401);
+    }
+    const user=await Post.find({ postedBy:id});
+    
+    if(!user){
+        return next(new AppError("User doest not exist"),400);
+    }
+
+    res.status(200).json(user);
+}
